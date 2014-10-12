@@ -14,7 +14,7 @@ data$Datetime <- strptime(Datetime, "%d/%m/%Y %H:%M:%S")
 png(filename = "plot3.png", bg = "transparent")
 
 ## create empty plot
-plot(data$Datetime, data$Sub_metering_1, type ="n", xlab = "", ylab = "Energy sub metering")
+plot(data$Datetime, data$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering")
 
 ## add line for each sub metering measure
 lines(data$Datetime, data$Sub_metering_1, type = "l")

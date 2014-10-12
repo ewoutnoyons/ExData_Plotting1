@@ -23,7 +23,7 @@ plot(data$Datetime, data$Global_active_power, type = "l", xlab = "", ylab = "Glo
 plot(data$Datetime, data$Voltage, type = "l", xlab = "datetime", ylab = "Voltage")
 
 ## add third plot
-plot(data$Datetime, data$Sub_metering_1, type ="n", xlab = "", ylab = "Energy sub metering")
+plot(data$Datetime, data$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering")
 lines(data$Datetime, data$Sub_metering_1, type = "l")
 lines(data$Datetime, data$Sub_metering_2, type = "l", col = "red")
 lines(data$Datetime, data$Sub_metering_3, type = "l", col = "blue")
